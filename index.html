@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caitmeme-website</title>
+    <link rel="icon" type="image/x-icon" href="caitmeme-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="caitmeme-favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="caitmeme-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="caitmeme-favicons/favicon-16x16.png">
+    <link rel="manifest" href="caitmeme-favicons/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/image1.jpg') no-repeat center center/cover;
+            animation: backgroundCycle 10s infinite;
+        }
+        @keyframes backgroundCycle {
+            0%, 40% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/image1.jpg');
+            }
+            50%, 90% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/image2.jpg');
+            }
+            100% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/image1.jpg');
+            }
+        }
+        .follow-btn {
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .follow-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        .follow-btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+    <a href="https://x.com/caitmeme" target="_blank" rel="noopener noreferrer">
+        <button class="follow-btn">Hi there! Nice to meet ya<br>Click HERE to follow me on X</button>
+    </a>
+</body>
+</html>
